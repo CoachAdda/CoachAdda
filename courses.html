@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Classes - CoachAdda</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .course-card { display: none; }
+    .show { display: block !important; }
+  </style>
+
+</head>
+
+<body class="courses-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        
+        <h1 class="sitename">CoachAdda</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html" class="active">Classes</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Classes</h1>
+              <p class="mb-0">Choose from a variety of classes offered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Classes</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+  <div class="container mt-5">
+    <div class="text-center mb-4">
+      <button class="btn btn-sleek" onclick="filterClasses('all')">All</button>
+      <button class="btn btn-sleek" onclick="filterClasses('sports')">Sports</button>
+      <button class="btn btn-sleek" onclick="filterClasses('coding')">Coding</button>
+      <button class="btn btn-sleek" onclick="filterClasses('academics')">Academics</button>
+      <button class="btn btn-sleek" onclick="filterClasses('music')">Music</button>
+    </div>
+    <div class="row" id="courses">
+      <!-- Sports Classes -->
+      <div class="col-md-4 mb-3 course-card sports show">
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/black-man-doing-sports-playing-basketball-sunrise-silhouette_285396-1451.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720656000&semt=ais_user" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Basketball</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i>Gems International School, Block C 2, Palam Vihar, Gurugram</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card sports show">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Soccer</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card sports show">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1171084311/photo/tennis-rackets-and-balls-leaned-against-the-net.jpg?s=612x612&w=0&k=20&c=SnDgfU30k0PMfVjSHTv4umDQWwKtUHJ8AEgofJXg6w4=" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Tennis</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card sports show">
+        <div class="card">
+          <img src="https://us.123rf.com/450wm/sbhaumik/sbhaumik1608/sbhaumik160800125/62161978-cricket-ball-and-bails-on-grass-field.jpg?ver=6" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Cricket</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card sports show">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1386625371/photo/ping-pong-rackets-and-balls-on-a-blue-table-with-net.jpg?s=612x612&w=0&k=20&c=wdyxWVXzVJfWOyuLcM_GRen4TeQF9apOHk77uqVHE8g=" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Table Tennis</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coding Classes -->
+      <div class="col-md-4 mb-3 course-card coding show">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/6a/fb/f4/6afbf45910b9b4c344737f76043d2cbc.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Python</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card coding show">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1356364268/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-keyboard-screens-show-coding.jpg?s=612x612&w=0&k=20&c=4R_9mWq9KzgpC_pVBMMM0FNzw1L-NyFLa7tDqFInMGs=" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Web Development</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card coding show">
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/D4E12AQEipdNDPiE0tA/article-cover_image-shrink_720_1280/0/1702969505983?e=2147483647&v=beta&t=xeSg8GogG_tGhas2TdYPSCx01dg__cpqspfLQEw69sM" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Java Programming</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card coding show">
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/D5612AQEl56l6fdkwEw/article-cover_image-shrink_600_2000/0/1701941495848?e=2147483647&v=beta&t=Ce0v_UZXubHmZVyYYxTpHzo7Y0NeqNFC7CAgcNZqJcQ" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Game Development</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card coding show">
+        <div class="card">
+          <img src="https://duws858oznvmq.cloudfront.net/Asset3educationappdevelopmentcompany_ezgif_com_png_to_webp_converter_901c2ea5b3.webp" class="card-img-top" alt="Basketball" height = "230px" height="230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Mobile App Development</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card coding show">
+        <div class="card">
+          <img src="https://www.veeforu.com/wp-content/uploads/2023/07/Ai-HD-background-with-connected-horizontal-lines.jpg" class="card-img-top" alt="Basketball" height = "230px" >
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Artificial Intelligence</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more coding courses here -->
+
+      <!-- Academic Classes -->
+      <div class="col-md-4 mb-3 course-card academics show">
+        <div class="card">
+          <img src="https://img.freepik.com/premium-vector/mathematics-vector-thin-line-horizontal-blue-modern-banner-math-science-outline-illustration_104589-5680.jpg?w=360" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Mathematics</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card academics show">
+        <div class="card">
+          <img src="https://wallpapers.com/images/featured/theoretical-physics-2cxq76fiszqac8la.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Physics</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card academics show">
+        <div class="card">
+          <img src="https://c4.wallpaperflare.com/wallpaper/822/461/115/technology-physics-and-chemistry-chemistry-hd-wallpaper-preview.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Chemistry</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card academics show">
+        <div class="card">
+          <img src="https://png.pngtree.com/background/20230303/original/pngtree-dna-education-biology-picture-image_2083459.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Biology</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card academics show">
+        <div class="card">
+          <img src="https://wallpapers.com/images/hd/english-5000-x-2500-wallpaper-ims7fd0l2hrxsnjl.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">English</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card academics show">
+        <div class="card">
+          <img src="https://wallpapers.com/images/hd/historical-background-1210-x-807-ek65sj8deo6k6tfo.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href class="course-details.html">Geography</a href></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music Classes -->
+      <div class="col-md-4 mb-3 course-card music show">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3wunigmuL4PvV04eFJhjRZYpPsUeEH5f4Gg&s" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Guitar</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i>Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card music show">
+        <div class="card">
+          <img src="https://i.pinimg.com/originals/3c/a3/94/3ca394f7c37526ab11be923e546f3303.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Piano</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card music show">
+        <div class="card">
+          <img src="https://img.freepik.com/free-photo/view-violin-musical-instruments-store_23-2150779979.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721001600&semt=ais_user" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Violin</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card music show">
+        <div class="card">
+          <img src="https://c4.wallpaperflare.com/wallpaper/602/59/819/drum-drums-musical-instrument-stage-wallpaper-preview.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Drums</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card music show">
+        <div class="card">
+          <img src="https://c0.wallpaperflare.com/preview/636/524/841/microphone-stage-light-show.jpg" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Vocals</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 course-card music show">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/92402606/photo/tablas-on-white-table-with-gray-mottled-background.jpg?s=612x612&w=0&k=20&c=7YxaIzT-cGatI_MvtSFrLmt_3E48Q_pFINhzcyFCqkQ=" class="card-img-top" alt="Basketball" height = "230px">
+          <div class="card-body">
+            <h5 class="card-title"><a href = "course-details.html">Tabla</a></h5>
+            <p class="card-text"><i class = "bi-geo-alt"></i> Sports Center</p>
+          </div>
+        </div>
+      </div>
+      <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" href="https://mdbootstrap.com/">CoachAdda</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+  </main>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    function filterClasses(category) {
+      var courses = document.getElementsByClassName('course-card');
+      for (var i = 0; i < courses.length; i++) {
+        courses[i].classList.remove('show');
+        if (category === 'all' || courses[i].classList.contains(category)) {
+          courses[i].classList.add('show');
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>

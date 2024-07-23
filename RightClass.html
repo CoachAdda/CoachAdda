@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find the Right Class</title>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        
+        <h1 class="sitename">CoachAdda</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html" class="active">Classes</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-title" data-aos="fade">
+    <div class="heading">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1>Find the Right Class For You</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li class="current">Find the Right Class</li>
+
+        </ol>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container mt-5">
+    <form id="classForm" action="SuccessfulRegistration.html" method="GET">
+      <!-- Child's Interests -->
+      <div class="form-group">
+        <label for="interests">What are your child's interests?</label>
+        <select multiple class="form-control" id="interests" name="interests[]" required>
+          <option value="sports">Sports</option>
+          <option value="music">Music</option>
+          <option value="coding">Coding</option>
+          <option value="academics">Academics</option>
+        </select>
+      </div>
+      <!-- Availability -->
+      <div class="form-group">
+        <label for="availability">What days is your child available?</label>
+        <select multiple class="form-control" id="availability" name="availability[]" required>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select>
+      </div>
+      
+      <!-- Location -->
+      <div class="form-group">
+        <label for="location">Enter your location</label>
+        <input type="text" class="form-control" id="location" name="location" required>
+      </div>
+      
+      <!-- Budget -->
+      <div class="form-group">
+        <label for="budget">What is your budget range?</label>
+        <input type="range" class="form-control-range" id="budget" name="budget" min="1000" max="36000" step="5000" oninput="this.nextElementSibling.value = this.value">
+        <output>1000</output>
+      </div>
+      
+      
+      <!-- Child's Age -->
+      <div class="form-group">
+        <label for="age">What is your child's age?</label>
+        <input type="number" class="form-control" id="age" name="age" min="1" required>
+      </div>
+      
+      <!-- Previous Experience -->
+      <div class="form-group">
+        <label for="experience">Does your child have any previous experience?</label>
+        <select class="form-control" id="experience" name="experience" required>
+          <option value="">Select Experience</option>
+          <option value="none">None</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      
+      <button type="submit" class="btn btn-sleek">Submit</button>
+    </form>
+  </div>
+      <br><br>
+      <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-body" href="https://mdbootstrap.com/">CoachAdda</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
