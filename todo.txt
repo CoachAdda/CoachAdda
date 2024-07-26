@@ -3,5 +3,5 @@ popular courses - done
 courses page infos - done
 redirection issues
 logo to thingi
-courses foot looking bad
+foot change
 slider on find a coach turn into input
