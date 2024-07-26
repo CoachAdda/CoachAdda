@@ -1,6 +1,6 @@
-favicon
-popular courses
-courses page infos
+favicon - done
+popular courses - done
+courses page infos - done
 redirection issues
 logo to thingi
 courses foot looking bad

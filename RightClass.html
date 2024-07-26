@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find the Right Class</title>
 
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Starter Page - CoachAdda</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link href="assets/img/favicon.png" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
-<body>
+
+<body class="starter-page-page">
+
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-  
+
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <img src="assets/img/favicon.png" alt="">
         <h1 class="sitename">CoachAdda</h1>
       </a>
-  
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
@@ -40,6 +53,8 @@
       <a href="courses.html" class="btn-getstarted">Find A Class</a>
     </div>
   </header>
+
+  <main class="main">
 
   <div class="page-title" data-aos="fade">
     <div class="heading">
@@ -56,12 +71,12 @@
         <ol>
           <li><a href="index.html">Home</a></li>
           <li class="current">Find the Right Class</li>
-
+  
         </ol>
       </div>
     </nav>
   </div>
-
+  
   <div class="container mt-5">
     <form id="classForm" action="SuccessfulRegistration.html" method="GET">
       <!-- Child's Interests -->
@@ -87,27 +102,28 @@
           <option value="sunday">Sunday</option>
         </select>
       </div>
-      
+  
       <!-- Location -->
       <div class="form-group">
         <label for="location">Enter your location</label>
         <input type="text" class="form-control" id="location" name="location" required>
       </div>
-      
+  
       <!-- Budget -->
       <div class="form-group">
         <label for="budget">What is your budget range?</label>
-        <input type="range" class="form-control-range" id="budget" name="budget" min="1000" max="36000" step="5000" oninput="this.nextElementSibling.value = this.value">
+        <input type="range" class="form-control-range" id="budget" name="budget" min="1000" max="36000" step="5000"
+          oninput="this.nextElementSibling.value = this.value">
         <output>1000</output>
       </div>
-      
-      
+  
+  
       <!-- Child's Age -->
       <div class="form-group">
         <label for="age">What is your child's age?</label>
         <input type="number" class="form-control" id="age" name="age" min="1" required>
       </div>
-      
+  
       <!-- Previous Experience -->
       <div class="form-group">
         <label for="experience">Does your child have any previous experience?</label>
@@ -119,22 +135,39 @@
           <option value="advanced">Advanced</option>
         </select>
       </div>
-      
+  
       <button type="submit" class="btn btn-sleek">Submit</button>
     </form>
   </div>
-      <br><br>
-      <footer class="bg-body-tertiary text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-          © 2024 Copyright:
-          <a class="text-body" href="https://mdbootstrap.com/">CoachAdda</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-    </form>
+  </main>
+  <br><br>
+  <footer class="bg-body-tertiary text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">CoachAdda</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  </form>
   </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </main>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
