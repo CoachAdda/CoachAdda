@@ -3,3 +3,4 @@ popular courses
 courses page infos
 redirection issues
 logo to thingi
+courses foot looking bad
