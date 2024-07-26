@@ -4,4 +4,4 @@ courses page infos - done
 redirection issues
 logo to thingi
 courses foot looking bad
-slider on find a coach
+slider on find a coach turn into input
