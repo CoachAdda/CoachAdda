@@ -15,9 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,16 +37,26 @@
       display: block !important;
     }
 
-    #searchInput {
-      width: 100%;
-      padding: 10px;
+    #searchDropdownContainer {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
       margin-bottom: 20px;
+    }
+
+    #searchInput {
+      width: 300px;
+      padding: 10px;
       font-size: 16px;
       border: 1px solid #ddd;
       border-radius: 4px;
     }
-  </style>
 
+    .dropdown {
+      display: flex;
+      align-items: center;
+    }
+  </style>
 </head>
 
 <body class="courses-page">
@@ -96,18 +106,27 @@
     </div><!-- End Page Title -->
 
     <div class="container mt-5">
-      <div class="text-center mb-4">
-        <input type="text" id="searchInput" onkeyup="searchClasses()" placeholder="Search for classes...">
-        <button class="btn btn-sleek" onclick="filterClasses('all')">All</button>
-        <button class="btn btn-sleek" onclick="filterClasses('sports')">Sports</button>
-        <button class="btn btn-sleek" onclick="filterClasses('music')">Music</button>
-        <button class="btn btn-sleek" onclick="filterClasses('coding')">Coding</button>
-        <button class="btn btn-sleek" onclick="filterClasses('photograph')">Photograph</button>
-        <button class="btn btn-sleek" onclick="filterClasses('cooking')">Cooking</button>
-        <button class="btn btn-sleek" onclick="filterClasses('art')">Art</button>
-        <button class="btn btn-sleek" onclick="filterClasses('yoga')">Yoga</button>
-        <button class="btn btn-sleek" onclick="filterClasses('dance')">Dance</button>
+      <div id="searchDropdownContainer">
+        <input type="text" id="searchInput" onkeyup="searchClasses()" placeholder="Search for classes..." class="form-control">
+        <div class="dropdown">
+          <button class="btn btn-sleek dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Filter by Category
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('all')">All</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('sports')">Sports</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('music')">Music</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('coding')">Coding</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('photograph')">Photograph</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('cooking')">Cooking</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('art')">Art</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('yoga')">Yoga</a></li>
+            <li><a class="dropdown-item" href="#" onclick="filterClasses('dance')">Dance</a></li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Placeholder for courses -->
       <div class="row" id="courses">
         <div class="row" id="courses">
           <!-- Sports Classes -->
@@ -369,9 +388,11 @@
             </div>
           </div>
       </div>
+      </div>
     </div>
 
   </main>
+
   <footer class="bg-body-tertiary text-center text-lg-start">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2024 Copyright:
@@ -419,4 +440,6 @@
       }
     }
   </script>
-  
+</body>
+
+</html>
